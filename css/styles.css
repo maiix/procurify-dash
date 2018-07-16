@@ -1,0 +1,39 @@
+body {
+  background-color: #EEE;
+  font-family: 'Overpass', sans-serif;
+}
+.header {
+  background-color: #03BA5B;
+  padding: 5px 10px;
+  height: 30px;
+}
+section .w-100 {
+  width: 100%;
+  height: 100%
+}
+nav a{
+  color: #FFF;
+  text-decoration: none;
+  padding: 14px 14px;
+  display: block;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.left-nav {
+  background-color: #1B3D46;
+  width: 20%;
+  max-width: 220px;
+  float: left;
+}
+.left-nav a i {
+  width: 30px;
+}
+.left-nav span {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 11px;
+}
+.content {
+  width: 80%;
+  background-color: #eeeeee;
+  float: left;
+}
