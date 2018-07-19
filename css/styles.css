@@ -3,11 +3,11 @@ body {
   font-family: 'Overpass', sans-serif;
   color: #282828;
 }
-.header {
+header {
   background-color: #03BA5B;
   padding: 10px;
-  width: auto;
   height: 30px;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.2);
 }
 .logo {
   float: left;
@@ -49,21 +49,16 @@ body {
   padding: 0px 12px 0px 16px;
 
 }
-
-section .w-100 {
-  width: 100%;
-  height: 100%
-}
 nav a{
   color: #FFF;
   text-decoration: none;
   padding: 15px 14px;
   display: block;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-right: 4px solid #1B3D46;
 }
 .left-nav {
   background-color: #1B3D46;
-  width: 20%;
   min-height: 100vh;
   max-width: 200px;
   float: left;
@@ -81,29 +76,43 @@ nav a{
   border-right: 4px solid #26BCB9;
 
 }
+.left-nav a:hover > i {
+  color: #FAAB18;
 
-
+}
+nav a.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-right: 4px solid #26BCB9;
+}
+nav a.active > i {
+    color: #FAAB18;
+}
 
 
 .content {
-  width: 80%;
-  background-color: #eeeeee;
+  width: 100%;
+}
+.col-left {
+  width: 15%;
+  margin-right: 20px;
+}
+.col-center {
+  width: 60%;
   float: left;
-  padding: 20px;
+  margin: 20px 0 0 20px;
 }
-.col-1 {
-  width: 70%;
-}
-.col-2 {
-  width: 30%;
+.col-right {
+  width: 25%;
+  float: left;
+  margin: 20px 0 0 20px;
 }
 
-.col-1 .box{
+.col-center .box{
   background-color: #FFFFFF;
   box-shadow: 0px 2px 3px rgba(0,0,0,.2);
   position: relative;
 }
-.col-2 .box{
+.col-right .box{
   background-color: #FFFFFF;
   box-shadow: 0px 2px 3px rgba(0,0,0,.2);
   position: relative;
@@ -122,34 +131,39 @@ nav a{
   background: #FFF;
 }
 .row {
-  margin-right: -10px;
-  margin-left: -10px;
   box-sizing: border-box;
 }
-.badge-1 {
-  width: 30%;
+.badge {
+  width: 33%;
   text-align: center;
   border-right: 1px solid #EEE;
   border-bottom: 1px solid #EEE;
-  padding: 21px 11px 1px 11px;
+  padding: 10px 0px 0px 0px;
   float: left;
   background-color: #FFF;
 }
-.badge-1:hover {
+.badge:last-child {
+  border-right: 0px solid;
+}
+.badge:hover {
   background-color: rgba(84, 201, 135, .09);
 }
-.badge-1 p{
+.badge p{
   font-weight: 400;
   font-size: 13px;
   color: #414141;
   text-decoration: none;
   margin: 20px 0px;
 }
-.badge-1 span {
+.badge span {
   font-size: 40px;
   font-weight: 400;
   color: #FAAB18;
 }
-.badge-1 a {
+.badge a {
   text-decoration: none;
+}
+.comments {
+  text-align: center;
+  padding: 120px 0;
 }
